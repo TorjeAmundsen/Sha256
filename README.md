@@ -1,6 +1,13 @@
+# Introduction
 C implementation of SHA-256 hashing algorithm, from the SHA-2 (Secure Hash Algorithm 2) family.
 
 This my first time writing an "actual thing" in C, something that isn't me just messing around and experimenting with how stuff works with a couple of lines of code, so I apologize in advance if you attempt to read this code. It is almost certainly a mess lol.
+
+# Usage
+
+`.\sha256 <input string>`
+
+No input string also works, as the algorithm still works with an empty string as input.
 
 # Compiling
 Compiled on Windows 10 using GCC v6.3.0. This code makes assumptions about your machine not being ancient and things, and also that your machine uses big-endian byte-ordering.
