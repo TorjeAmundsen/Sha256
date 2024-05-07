@@ -151,8 +151,7 @@ void sha256_complete(const Byte input[]) {
     sha256_pre_process(ctx, input, inputLen);
 
     // scrambles for each 512 bit (64 byte) chunk of the pre-processed message
-    for (i = 0; i < ctx->pre_processed_len / 64; ++i)
-    {
+    for (i = 0; i < ctx->pre_processed_len / 64; ++i) {
         sha256_scramble(ctx, i * 64);
     }
 
